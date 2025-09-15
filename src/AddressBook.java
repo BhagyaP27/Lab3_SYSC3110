@@ -3,7 +3,7 @@ import java.util.*;
 public class AddressBook {
     private ArrayList<BuddyInfo> friends;
 
-    public AddressBook(BuddyInfo b){
+    public AddressBook(){
         this.friends = new ArrayList<>();
     }
 
@@ -14,7 +14,10 @@ public class AddressBook {
     public void removeBuddy(BuddyInfo b){this.friends.remove(b);}
 
     public static void main(String[] args){
-        System.out.println("Address Book");
+        BuddyInfo buddy = new BuddyInfo("Tom", 20);
+        AddressBook addressBook = new AddressBook();
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(buddy);
     }
 }
 

@@ -15,11 +15,14 @@ public class AddressBook {
 
     public static void main(String[] args){
         BuddyInfo buddy = new BuddyInfo("Tom", 20);
+        BuddyInfo bud = new BuddyInfo("Tim",25);
         AddressBook addressBook = new AddressBook();
         /* add another buddy */
+        addressBook.addBuddy(bud);
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(buddy);
     }
 }
+
 
 
